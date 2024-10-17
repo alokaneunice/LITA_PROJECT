@@ -8,8 +8,27 @@ The sales performance of a retail store using the provided sales data will be an
 ### TOOLS USED
 - Microsoft Excel for data cleaning and analyses. [Download Here](www.microsoft.com)
 - SQL for querying data
-- Power Bi for data visualizations
+- Power BI for data visualizations
 ### EXPLORATORY DATA ANALYSIS
   1. Open the "LITA Capstone Dataset.xlsx" file in Excel.
-     a. Highlight all the data, sort the data in descending or ascending order
-     b. Using Conditional Formatting, check for the number of missing or blank cells within the specified range.
+     -  Highlight all the data, sort the data in descending or ascending order.
+     - Using Conditional Formatting, check for the number of missing or blank cells within the specified range.
+
+  2. Create Pivot Tables to display:
+     - Total Sales by Product
+     - Total Sales by Region
+     - Monthly Sales Trends
+  ### CALCULATING KEY METRICS
+  1. Average Sales per product: where Total Sales is calculated as "quantity*unitprice"
+     ```
+     =AVERAGEIF(C2:C50001, "Shirt", H2:H50001)
+     =AVERAGEIF(C2:C50001, "Shoes", H2:H50001)
+     ```
+  2. Total Revenue by Region: where Revenue is calculated as "quantity*unitprice"
+     ```
+     =SUMIF(D2:D50001, "North", H2:H50001)
+     =SUMIF(D2:D50001, "South", H2:H50001)
+     ```
+### EXCEL VISUALIZATION
+![lita sales datapng](https://github.com/user-attachments/assets/a1110135-cfeb-4553-ae22-ce4e87415468)
+
