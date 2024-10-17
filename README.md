@@ -1,10 +1,24 @@
 # LITA_PROJECT
 
+[PROJECT OVERVIEW](#project-overview)
+
+[DATA SOURCE](#data-source)
+
+[TOOLS USED](#tools-used)
+
+[EXPLORATORY DATA ANALYSIS](#exploratory-data-analysis)
+
+[CALCULATING KEY METRICS](#calculating-key-metrics)
+
+[EXCEL VISUALIZATION](#excel-visualization)
+
+
 ### PROJECT TITLE: SALES PERFORMANCE ANALYSIS FOR A RETAIL STORE
 ### PROJECT OVERVIEW
 The sales performance of a retail store using the provided sales data will be analyzed. The goal is to uncover key insights, such as top-selling products, regional performance, and monthly sales trends, and to present these findings in an interactive Power Bl dashboard.
 
 ### DATA SOURCE
+The data used was provided by the Incubator Hub for LITA project. LITA is an acronym for LADIES IN TECH AFRICA, an initiative to empower women in the Technological ambience.
 ### TOOLS USED
 - Microsoft Excel for data cleaning and analyses. [Download Here](www.microsoft.com)
 - SQL for querying data
