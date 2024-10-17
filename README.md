@@ -12,6 +12,8 @@
 
 [EXCEL VISUALIZATION](#excel-visualization)
 
+[PIVOT TABLES](#pivot-tables)
+
 
 ### PROJECT TITLE: SALES PERFORMANCE ANALYSIS FOR A RETAIL STORE
 ### PROJECT OVERVIEW
@@ -45,4 +47,14 @@ The data used was provided by the Incubator Hub for LITA project. LITA is an acr
      ```
 ### EXCEL VISUALIZATION
 ![lita sales datapng](https://github.com/user-attachments/assets/a1110135-cfeb-4553-ae22-ce4e87415468)
+### PIVOT TABLES
+        - Total Sales by Product
+  ![totalsalesbyproduct](https://github.com/user-attachments/assets/14bd138f-0b61-4911-9b19-dc6003a5d38c)
+  
+       - Total Sales by Region
+  ![totalsalesbyregion](https://github.com/user-attachments/assets/3899a29f-28d4-405a-9b9d-aa0f9f8155a9)
+
+       - Monthly Sales Trends
+  ![totalsalesbymonth](https://github.com/user-attachments/assets/959cc23f-501c-48df-ad9d-670603f6f3f6)
+
 
