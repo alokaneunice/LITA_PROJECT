@@ -12,7 +12,7 @@
 
 [CALCULATING KEY METRICS](#calculating-key-metrics)
 
-[EXCEL VISUALIZATION](#excel-visualization)
+[DATA VISUALIZATION](#data-visualization)
 
 [PIVOT TABLES](#pivot-tables)
 
@@ -52,22 +52,11 @@ The data used was provided by the Incubator Hub for LITA project. LITA is an acr
      =SUMIF(D2:D50001, "North", H2:H50001)
      =SUMIF(D2:D50001, "South", H2:H50001)
      ```
-### EXCEL VISUALIZATION
-![lita sales datapng](https://github.com/user-attachments/assets/a1110135-cfeb-4553-ae22-ce4e87415468)
-### PIVOT TABLES
-        - Total Sales by Product
-  ![totalsalesbyproduct](https://github.com/user-attachments/assets/14bd138f-0b61-4911-9b19-dc6003a5d38c)
-  
-       - Total Sales by Region
-  ![totalsalesbyregion](https://github.com/user-attachments/assets/3899a29f-28d4-405a-9b9d-aa0f9f8155a9)
+### DATA VISUALIZATION
 
-       - Monthly Sales Trends
-  ![totalsalesbymonth](https://github.com/user-attachments/assets/959cc23f-501c-48df-ad9d-670603f6f3f6)
+### PIVOT TABLES
+ 
 
 ### PIVOT CHART
-![columnarchartproduct](https://github.com/user-attachments/assets/4cc326fa-3104-43da-97b6-5230dcdb28e8)
 
-![piechartregion](https://github.com/user-attachments/assets/e86e0e99-68b5-4875-80ba-58b310764431)
-
-![stackedlinemonth](https://github.com/user-attachments/assets/1e452212-200a-4d4f-ba78-604f9ce6c030)
 
