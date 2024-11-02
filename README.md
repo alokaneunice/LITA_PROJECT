@@ -1,4 +1,4 @@
-# LITA_PROJECT
+# LITA_SALES_PROJECT
 
 [PROJECT OVERVIEW FOR SALES TRANSACTIONS](#project-overview-for-sales-transactions)
 
