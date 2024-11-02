@@ -2,8 +2,6 @@
 
 [PROJECT OVERVIEW FOR SALES TRANSACTIONS](#project-overview-for-sales-transactions)
 
-[PROJECT OVERVIEW FOR CUSTOMER SUBSCRIPTION DATA](#project-overview-for-customer-subscription-data)
-
 [DATA SOURCE](#data-source)
 
 [TOOLS USED](#tools-used)
