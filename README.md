@@ -17,11 +17,9 @@
 [PIVOT CHART](#pivot-chart)
 
 
-## PROJECT TITLE: SALES PERFORMANCE ANALYSIS FOR A RETAIL STORE AND CUSTOMER SUBSCRIPTION DATASET
+## PROJECT TITLE: SALES PERFORMANCE ANALYSIS FOR A RETAIL STORE
 ### PROJECT OVERVIEW FOR SALES TRANSACTIONS
 The sales performance of a retail store using the provided sales data will be analyzed. The goal is to uncover key insights, such as top-selling products, regional performance, and monthly sales trends, and to present these findings in an interactive Power Bl dashboard.The insights obtained will serve as pointers to the overall performance of the store.
-### PROJECT OVERVIEW FOR CUSTOMER SUBSCRIPTION DATA
-The analyzed data will provide a comprehensive look at customer subscription patterns and revenue generated. This will enable insights into the high demand subscription type and how cancelled subscription affects the store.
 ### DATA SOURCE
 The data used was provided by the Incubator Hub for LITA project. LITA is an acronym for LADIES IN TECH AFRICA, an initiative to empower women in the Technological ambience.
 ### TOOLS USED
