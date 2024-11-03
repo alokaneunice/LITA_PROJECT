@@ -48,11 +48,77 @@ The data used was provided by the Incubator Hub for LITA project. LITA is an acr
      =SUMIF(D2:D50001, "North", H2:H50001)
      =SUMIF(D2:D50001, "South", H2:H50001)
      ```
+3. Query to retrieve the total sales for each product category
+````
+SELECT Product,  SUM(Quantity * UnitPrice) AS TotalSales
+FROM [dbo].[SalesData$]
+GROUP BY [Product]
+````
+4. Query to find the number of sales transactions in each region
+````
+SELECT Region, COUNT(OrderID) AS NumberOfTransactions
+FROM [dbo].[SalesData$]
+GROUP BY Region
+````
+5. Query to find the highest-selling product by total sales value
+````
+SELECT Top 1 Product, SUM(Quantity * UnitPrice) AS TotalSales
+FROM [dbo].[SalesData$]
+GROUP BY Product
+ORDER BY TotalSales DESC
+````
+6. Query to  calculate total revenue per product
+````
+SELECT Product, SUM(Quantity * UnitPrice) AS TotalRevenue
+FROM [dbo].[SalesData$]
+GROUP BY Product
+````
+7. Query to calculate monthly sales totals for the current year
+````
+SELECT FORMAT(OrderDate, 'yyyy-MM') AS Month, SUM(Quantity * UnitPrice) AS TotalSales
+FROM [dbo].[SalesData$]
+WHERE OrderDate >= DATEFROMPARTS(YEAR(GETDATE()), 1, 1) -- Start of the current year
+  AND OrderDate < DATEADD(YEAR, 1, DATEFROMPARTS(YEAR(GETDATE()), 1, 1)) -- Start of the next year
+GROUP BY FORMAT(OrderDate, 'yyyy-MM')
+ORDER BY Month
+````
+8. Query to find the top 5 customers by total purchase amount
+````
+SELECT TOP 5 [Customer_Id], SUM(Quantity * UnitPrice) AS TotalPurchase
+FROM [dbo].[SalesData$]
+GROUP BY [Customer_Id]
+ORDER BY TotalPurchase DESC
+````
+9. Query to calculate the percentage of total sales contributed by each region-----
+````
+SELECT Region,
+SUM (sales_Revenue) as total_sales,
+ROUND ((SELECT SUM (sales_Revenue)/ CAST((SELECT SUM(sales_Revenue) 
+FROM [dbo].[SalesData$] ) AS float) *100), 0) AS 
+percentage_total_sales
+FROM [dbo].[SalesData$]
+GROUP BY Region
+ORDER BY Region DESC
+````
+10. Query to identify products with no sales in the last quarter
+````
+SELECT DISTINCT Product
+FROM [dbo].[SalesData$]
+WHERE Product NOT IN (
+    SELECT Product
+    FROM [dbo].[SalesData$]
+    WHERE OrderDate >= DATEADD(MONTH, -3, GETDATE())
+)
+````
 ### DATA VISUALIZATION
+![SALESPERFORMANCEDASHBOARD](https://github.com/user-attachments/assets/e6771a9c-5ed0-4d46-bbc9-a89a053be54f)
 
 ### PIVOT TABLES
- 
+ ![lita sales datapng](https://github.com/user-attachments/assets/461789c8-cb01-4a81-b93d-40fbd644c3c5)
+![pivottableSalesData](https://github.com/user-attachments/assets/7074e1fb-f002-4e7b-a149-df1165d97f42)
 
 ### PIVOT CHART
+![PivotChartSalesData](https://github.com/user-attachments/assets/32e03873-627a-459f-a3d7-fb718ead162e)
+![pivotChartTableSalesData](https://github.com/user-attachments/assets/0483e9cd-580d-4bc8-bf3f-cf303c2f93bd)
 
 
